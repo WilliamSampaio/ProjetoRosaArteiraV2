@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototipo de site bootstrao V1</title>
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <!--bootstrap-->    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <!--scripts-->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <!--font awesome-->
+    <script src="https://kit.fontawesome.com/4f769b416b.js" crossorigin="anonymous"></script>
+    <!--progress bar-->
+    <script src="/assets/js/progressbar.min.js"></script>
+    <!--parallax-->
+    <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+</head>
+<body>
+  <header>
+    <div class="container" id="nav-container">
+      <nav class="navbar navbar-expand-lg fixed-top">
+        <a class="navbar-brand">
+          <img id="logo" src="/assets/img/novoLogo.png" alt="roSA Arteira">Rosa Arteira
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-links" 
+          aria-controls="navbar-links" aria-expanded="false" aria-label="toggler-navegation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
+          <div class="navbar-nav">
+            <a href="#" class="nav-item nav-link" id="home-menu">Home</a>
+            <a href="#" class="nav-item nav-link" id="about-menu">A Rosa Arteira</a>
+            <a href="#" class="nav-item nav-link" id="social-menu">Redes Sociais</a>
+            <a href="#" class="nav-item nav-link" id="services-menu">Serviços</a>
+            <a href="#" class="nav-item nav-link" id="Product-menu">Produtos</a>
+            <a href="#" class="nav-item nav-link" id="Contact-menu">Entre em Contato</a>       
+          </div>          
+        </div>        
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="container-fluid">
+      <div id="mainSlider" class="carousel slide" data-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/assets/img/slide1.jpg" class="d-block w-100" alt="panos personalizados">
+            <div class="carousel-caption d-none d-md-block">
+              <h2>Procura agilidade e profissionalismo na área de costura?</h2>
+              <p>Fale conosco, Temos mais de 7 anos trabalhando com corte e costura</p>
+              <a href="#" class="main-btn">confira nossos Produtos</a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="/assets/img/slide2.jpg" class="d-block w-100" alt="artesanato">
+            <div class="carousel-caption d-none d-md-block">
+              <h2>Procura um novo estilo pra sua cozinha?</h2>
+              <p>Conte conosco! Temos uma vasta seleção de estilos para garantir o melhor!</p>
+              <a href="#" class="main-btn">confira nossos conjuntos</a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="/assets/img/slide5.jpg" class="d-block w-100" alt="confeccao de roupas">
+            <div class="carousel-caption d-none d-md-block">
+              <h2>Tem uma roupa dos sonhos?</h2>
+              <p>Aqui ela se torna realidade! Faça hoje mesmo o seu Orçamento e tire a ideia do papel!</p>
+              <a href="#" class="main-btn">Quero um orçamento!</a>
+            </div>
+          </div>
+        </div>
+        <a href="#mainSlider" class="carousel-control-prev" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">previous</span>
+        </a>
+        <a href="#mainSlider" class="carousel-control-next" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">next</span>
+        </a>
+      </div>
+      <!--Sobre a empresa-->
+      <div id="about-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h3 class="main-title">Sobre a Rosa Arteira</h3>
+            </div>
+            <div class="col-md-6">
+              <img class="img-fluid" src="/assets/img/sobre.jpg" alt="">
+            </div>
+            <div class="col-md-6">
+              <h3 class="about-tittle">Um toque de ternura em casa peça</h3>
+              <p>Nossos produtos são personalizados de acordo com o seu prazer</p>
+              <p>Apos a aquisição das medidas e do modelo, seus sonhos estão um passo mais perto</p>
+              <p>Seja Jogo de cozinha, artesanato ou costura, proporcionais o melhor trabalho</p>
+              <p>Esses são os nossos diferenciais</p>
+              <ul id="about-list">
+                <li><i class="fas fa-check"></i>Utilizamos seu modelo enviado</li>
+                <li><i class="fas fa-check"></i>Multiplas alternativas de tecido ao seu gosto</li>
+                <li><i class="fas fa-check"></i>Trabalhamos com referencias fornecidas pelo cliente</li>
+                <li><i class="fas fa-check"></i>Suporte whatsapp</li>
+              </ul>
+            </div>            
+          </div>
+        </div>        
+      </div>
+      <!--Serviços da empresa-->
+      <div id="service-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h3 class="main-title">Nossas Especialidades</h3>
+            </div>
+            <div class="col-md-4 service-box">
+              <i class="fas fa-pen-nib"></i>
+              <h4>Costura</h4>
+              <p>Do menor buraco ate o rasgo mais feios, trabalhamos para restaurar sua peça a gloria de antes</p>
+            </div>
+            <div class="col-md-4 service-box">
+              <i class="fas fa-shopping-cart"></i>
+              <h4>Artasanato</h4>
+              <p>Do seu sonho para nos, e de nois para sua realidade, paças personalizadas unicas sobre encomenda, alem de conjuntos personalizados pra banheiro e cozinha</p>
+            </div>
+            <div class="col-md-4 service-box">
+              <i class="fas fa-paint-brush"></i>
+              <h4>Confecção</h4>
+              <p>Seu projeto a um click de distancia, fale com nossos especialistas e venha tirar seu projeto do papel</p>
+            </div>
+            <div class="col-md-4 service-box">
+              <i class="fas fa-hands-helping"></i>
+              <h4>Suporte</h4>
+              <p>Nossa equipe vai estar a postos para retirar suas duvidas, oferecendo suporte e informação a respeito de suas encomendas e produtos</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Dados da empresa-->
+      <div id="data-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 circle-box">
+              <div id="CircleA"></div>
+              <p>Remendos Feitos</p>
+            </div>
+            <div class="col-md-3 circle-box">
+              <div id="CircleB"></div>
+              <p>Conjuntos vendidos</p>
+            </div>
+            <div class="col-md-3 circle-box">
+              <div id="CircleC"></div>
+              <p>Peças confeccionadas</p>
+            </div>
+            <div class="col-md-3 circle-box">
+              <div id="CircleD"></div>
+              <p>Clientes Satisfeitos</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--entre em contato-->
+      <div id="apply-area">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-6 apply-box" id="atelie-img"></div>
+            <div class="col-md-6 apply-box" id="pattern-img">
+              <h4>Pra Todo remendo, uma agulha!</h4>
+              <p>Aqui valorizamos a sua peça, seja para custura reparação ou confecção, nosso atelie esta preparado pra tornar sua esperiencia a melhor possivel.</p>
+              <p>Confira nossas promoções em serviços e entre em contato para saber mais!</p>
+              <p>confira tambem nossas promoções de feriado</p>
+              <a href="#" class="main-btn" id="apply-btn">Saiba Mais</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!--footer-->
+  <footer>
+    <div id="contact-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h3 class="main-tittle">Entre em contato conosco</h3>
+          </div>
+          <div class="col-md-4 contact-box">
+            <i class="fas fa-phone"></i>
+            <p><span class="contact-tittle">Ligue para:</span> (92)0000-0000 </p>
+            <p><span class="contact-tittle">horarios:</span> 08:00 - 19:00 </p>
+          </div>
+          <div class="col-md-4 contact-box">
+            <i class="fas fa-envelope"></i>
+            <p><span class="contact-tittle">Envie um Email:</span> contato@Rosarteira.com.br </p>
+          </div>
+          <div class="col-md-4 contact-box">
+            <i class="fas fa-map-marker-alt"></i>
+            <p><span class="contact-tittle">Venha fazer uma visita:</span>Condominio Castanha Preta, N78</p>
+          </div>
+          <div class="col-md-6" id="msg-box">
+            <p>Ou nos deixe uma mensagem:</p>
+          </div>
+          <div class="col-md-6" id="contact-form">
+            <form action="">
+              <input type="email" class="form-control" placeholder="E-mail" name="email">
+              <input type="text" class="form-control" placeholder="assunto" name="subject">
+              <textarea class="form-control" rows="3" placeholder="Sua Mensagem..." name="mensagem"></textarea>
+              <input type="submit" class="main-btn" value="Enviar">
+            </form>
+          </div>
+      </div>
+    </div>
+    <div id="copy-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <p>Desenvolvido por: <a href="https://github.com/HERMEUSMOURA">HERMEUSMOURA</a> &copy; 2023</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="/assets/js/scripts.js"></script>
+</body>
+</html>
