@@ -14,7 +14,7 @@ p li{
 }
 /*Caracteriticas da barra da navegação*/
 header, .navbar{
-    background-image: url(./assets/img/uiui.jpg);
+    background-image: url(../img/uiui.jpg);
     background-size: cover;
 }
 #nav-container{
