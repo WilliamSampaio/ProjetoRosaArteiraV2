@@ -80,8 +80,8 @@ document.addEventListener('DOMContentLoaded', function () {
     //parallax
     setTimeout(function(){
 
-        $('#data-area').parallax({imageSrc: '/assets/img/parallax.jpg'});
-        $('#apply-area').parallax({imageSrc: '/assets/img/pattern.png'});
+        $('#data-area').parallax({imageSrc: './assets/img/parallax.jpg'});
+        $('#apply-area').parallax({imageSrc: './assets/img/pattern.png'});
 
     }, 250);
   
